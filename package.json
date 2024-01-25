@@ -19,6 +19,8 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@wordpress/scripts": "^26.19.0",
+    "@wordpress/block-editor": "12.10.13",
+    "@wordpress/blocks": "12.19.13",
     "@wordpress/stylelint-config": "^21.27.0",
     "dir-archiver": "^2.1.0",
     "node-sass": "^9.0.0",
@@ -51,7 +53,9 @@
     "start": "wp-scripts start"
   },
   "dependencies": {
+    "@10up/block-components": "^1.17.3",
     "@popperjs/core": "^2.11.0",
+    "@wordpress/server-side-render": "^4.25.0",
     "bootstrap": "^5.3.2",
     "copyfiles": "^2.4.1",
     "fork-awesome": "^1.2.0",
