@@ -115,16 +115,34 @@ function sunflower_the_social_media_sharers() {
 	if ( sunflower_get_setting( 'sunflower_sharer_facebook' ) ) {
 		$sharer[] = sprintf(
 			'<a href="https://www.facebook.com/sharer/sharer.php?u=%s" target="_blank" title="%s" class="sharer"><i class="fab fa-facebook-f"></i></a>',
-			rawurlencode( (string) get_the_title() ),
+			get_permalink(),
 			__( 'Share on Facebook ', 'sunflower' )
 		);
 	}
 
 	if ( sunflower_get_setting( 'sunflower_sharer_whatsapp' ) ) {
 		$sharer[] = sprintf(
-			'<a href="https://wa.me/?text=%s" target="_blank" title="%s" class="sharer"><i class="fab fa-whatsapp"></i></a>',
+			'<a href="https://wa.me/?text=%s %s" target="_blank" title="%s" class="sharer"><i class="fab fa-whatsapp"></i></a>',
 			rawurlencode( (string) get_the_title() ),
+			get_permalink(),
 			__( 'Share on WhatsApp ', 'sunflower' )
+		);
+	}
+
+	if ( sunflower_get_setting( 'sunflower_sharer_mastodon' ) ) {
+		$sharer[] = sprintf(
+			'<div
+              class="mastodon-share-button sharer"
+              data-target="%1$s"
+              data-name="%2$s"
+              data-buttonstyle="fab fa-mastodon"
+              data-text="%3$s"
+			  title="%3$s"
+              >%4$s</div>',
+			get_permalink(),
+			rawurlencode( (string) get_the_title() ),
+			__( 'Share on Mastodon ', 'sunflower' ),
+			'<i class="fab fa-mastodon"></i>',
 		);
 	}
 
@@ -153,16 +171,17 @@ if ( ! function_exists( 'sunflower_post_thumbnail' ) ) :
 	 * element when on single views.
 	 *
 	 * @param boolean $styled_layout Is this a styled layout.
-	 * @param boolean $caption Show the caption.
+	 * @param boolean $show_caption Show the caption.
+	 * @param boolean $is_block Is latest news block.
 	 */
-	function sunflower_post_thumbnail( $styled_layout = false, $caption = false ) {
+	function sunflower_post_thumbnail( $styled_layout = false, $show_caption = false, $is_block = false ) {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
 
 		global $post;
 
-		if ( is_singular() ) :
+		if ( is_singular() && ! $is_block ) :
 			?>
 			<div class="post-thumbnail
 			<?php
@@ -181,8 +200,8 @@ if ( ! function_exists( 'sunflower_post_thumbnail' ) ) :
 				?>
 
 			<?php
-			if ( $caption ) {
-				$caption = get_post( get_post_thumbnail_id() )->post_excerpt;
+			if ( $show_caption ) {
+				$caption = get_post( get_post_thumbnail_id() )?->post_excerpt;
 				if ( ! empty( $caption ) ) {
 					?>
 				<figcaption><?php echo esc_attr( $caption ); ?></figcaption>

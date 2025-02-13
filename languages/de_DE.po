@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: sunflower 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/sunflower\n"
-"POT-Creation-Date: 2024-09-03T12:26:49+00:00\n"
-"PO-Revision-Date: 2024-09-03 14:29+0200\n"
+"POT-Creation-Date: 2025-02-10T09:46:09+00:00\n"
+"PO-Revision-Date: 2025-02-10 10:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -29,7 +29,7 @@ msgstr "https://sunflower-theme.de"
 #. Description of the theme
 #: style.css
 msgid "Theme for the German Green Party"
-msgstr "WordPress Theme für BÜNDNIS 90/DIE GRÜNEN"
+msgstr "WordPress-Theme für BÜNDNIS 90/DIE GRÜNEN"
 
 #. Author of the theme
 #: style.css
@@ -49,16 +49,16 @@ msgstr "Hoppla, Seite nicht gefunden."
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
-msgstr "Leider wurde die Seite nicht gefunden. Möchten Sie suchen?"
+msgstr "Leider wurde die Seite nicht gefunden. Möchtest du suchen?"
 
 #: archive-sunflower_event.php:39
 msgid "Events archive"
 msgstr "Vergangene Veranstaltungen"
 
-#: archive-sunflower_event.php:39 functions/events.php:36
+#: archive-sunflower_event.php:39 functions/events.php:37
 #: functions/options/class-sunflowereventsettingspage.php:34
 #: functions/options/class-sunflowereventsettingspage.php:35
-#: functions/options/class-sunflowereventsettingspage.php:136
+#: functions/options/class-sunflowereventsettingspage.php:146
 msgid "Events"
 msgstr "Termine"
 
@@ -74,32 +74,32 @@ msgstr "Alle Termine"
 msgid "Archive"
 msgstr "Archiv"
 
-#: archive-sunflower_event.php:63 functions/events.php:262
-#: functions/options/class-sunflowereventsettingspage.php:113
+#: archive-sunflower_event.php:63 functions/events.php:285
+#: functions/options/class-sunflowereventsettingspage.php:123
 msgid "Map"
 msgstr "Landkarte"
 
-#: archive-sunflower_event.php:128
+#: archive-sunflower_event.php:121
 msgid "more info"
 msgstr "mehr Infos"
 
-#: archive-sunflower_event.php:185 single-sunflower_event.php:143
+#: archive-sunflower_event.php:178 single-sunflower_event.php:151
 msgid "Show event location on map"
 msgstr "Veranstaltungsort auf der Karte anzeigen"
 
-#: archive-sunflower_event.php:188 single-sunflower_event.php:146
+#: archive-sunflower_event.php:181 single-sunflower_event.php:154
 msgid ""
 "If you click the button, the content will be downloaded from openstreetmap."
 msgstr ""
-"Wenn Sie auf den Button klicken, werden Daten von openstreetmap.org geladen."
+"Wenn du auf den Button klickst, werden Daten von openstreetmap.org geladen."
 "<br>Dafür gelten deren <a href=\"https://www.openstreetmap.org/about\" "
 "target=\"_blank\">Datenschutzrichtlinien</a>."
 
-#: archive-sunflower_event.php:192 single-sunflower_event.php:154
+#: archive-sunflower_event.php:185 single-sunflower_event.php:162
 msgid "Show map"
 msgstr "Kartendaten laden"
 
-#: archive-sunflower_event.php:202
+#: archive-sunflower_event.php:195
 msgid "calendar in ics-format"
 msgstr "Kalender im ics-Format"
 
@@ -111,7 +111,7 @@ msgstr "zurück"
 msgid "next"
 msgstr "vor"
 
-#: build/latest-posts/render.php:80
+#: build/latest-posts/render.php:92
 msgid "No posts found"
 msgstr "Keine Beiträge gefunden"
 
@@ -138,9 +138,9 @@ msgid ""
 "more info see <a href=\"%s\">privacy</a>"
 msgstr ""
 "Ihre E-Mail-Adresse wird nicht veröffentlicht. Erforderliche Felder sind mit "
-"* markiert. Mit der Nutzung dieses Formulars erklären Sie sich mit der "
-"Speicherung und Verarbeitung Ihrer Daten durch diese Website einverstanden. "
-"Weiteres entnehmen Sie bitte der <a href=\"%s\">Datenschutzerklärung</a>."
+"* markiert. Mit der Nutzung dieses Formulars erklärst du dich mit der "
+"Speicherung und Verarbeitung deiner Daten durch diese Website einverstanden. "
+"Weiteres entnehme bitte der <a href=\"%s\">Datenschutzerklärung</a>."
 
 #: comments.php:56
 msgid "One comment"
@@ -160,7 +160,7 @@ msgstr "Keine Kommentare möglich."
 
 #: functions/admin.php:24
 msgid "Sunflower Settings Page"
-msgstr "Sunflower Einstellungen"
+msgstr "Sunflower-Einstellungen"
 
 #. translators: %1$s and %2$s are replaced with links
 #: functions/admin.php:48
@@ -177,7 +177,7 @@ msgstr "Mehr Infos gibt es auf der Sunflower-Einstellungsseite"
 
 #: functions/admin.php:74
 msgid "PHP Version End of Life"
-msgstr "PHP Version veraltet"
+msgstr "PHP-Version veraltet"
 
 #. translators: %1$s is replace with current PHP version and %2$s is replaced with link
 #: functions/admin.php:84
@@ -194,12 +194,12 @@ msgid ""
 msgstr ""
 "<p>Ihr nutzt PHP <strong>%1$s</strong>. Diese Version wird <a href=\"https://"
 "www.php.net/supported-versions.php\">nicht mehr unterstützt</a>!</p>\n"
-"                <p>Bitte beachtet, dass das Sunflower Theme ab Version 2.1.0 "
+"                <p>Bitte beachtet, dass das Sunflower-Theme ab Version 2.1.0 "
 "<strong>mindestens PHP 8.2+ erfordert</strong>. <br />\n"
 "                Wenn ihr weiterhin Aktualisierungen erhalten wollt, dann "
-"müsst ihr euren Server aktualisieren bzw. euren Web-Hosting Anbieter "
+"müsst ihr euren Server aktualisieren bzw. euren Web-Hosting-Anbieter "
 "ansprechen.</p>\n"
-"                <p>Wenn ihr auf der Suche nach einem Web-Hosting Anbieter "
+"                <p>Wenn ihr auf der Suche nach einem Web-Hosting-Anbieter "
 "mit Haltung seid, schaut doch mal bei  %2$s vorbei.</p>"
 
 #: functions/admin.php:114
@@ -214,9 +214,9 @@ msgid ""
 "as favicon, please read and accept the terms of use."
 msgstr ""
 "Es gibt eine neue Einstellung auf der Seite <a href='admin.php?"
-"page=sunflower_admin'>Sunflower->Erste Schritte</a>.<br />\n"
+"page=sunflower_admin'>Sunflower → Erste Schritte</a>.<br />\n"
 "            Wenn Du weiterhin die Sonnenblume im Menü, im Footer und als "
-"Favicon nutzen möchtest, lese und akzeptiere die Nutzungsbedingungen."
+"Favicon nutzen möchtest, lies und akzeptiere die Nutzungsbedingungen."
 
 #: functions/admin.php:220 functions/block-patterns.php:24
 #: functions/blocks.php:19
@@ -233,7 +233,7 @@ msgstr "Hilfe für Sunflower-Termine"
 msgid "Form not sent. Captcha wrong. Please try again."
 msgstr ""
 "Das Formular konnte nicht gesendet werden, weil die Rechnung (Captcha) "
-"falsch ist. Bitte versuchen Sie es noch einmal."
+"falsch ist. Bitte versuche es noch einmal."
 
 #: functions/events.php:13
 msgid "Startdate"
@@ -271,11 +271,15 @@ msgstr "Veranstalter"
 msgid "Organizer URL"
 msgstr "URL der Organisator*in"
 
-#: functions/events.php:37 functions/events.php:92
+#: functions/events.php:25
+msgid "Show map on event"
+msgstr "Zeige Karte beim Termin"
+
+#: functions/events.php:38 functions/events.php:93
 msgid "Event"
 msgstr "Termin"
 
-#: functions/events.php:212
+#: functions/events.php:236
 msgid ""
 "This event will be imported by remote ical-calendar. All changes here will "
 "be overwritten."
@@ -283,20 +287,15 @@ msgstr ""
 "Dieser Termin wird automatisch über einen externen Kalender gepflegt. Alle "
 "Änderungen hier werden regelmäßig überschrieben."
 
-#: functions/events.php:263
-#: functions/options/class-sunflowereventsettingspage.php:114
-msgid "load map"
-msgstr "Kartendaten laden"
+#: functions/events.php:286
+msgid "Load map and fix location marker"
+msgstr "Karte laden und Postion korrigieren"
 
-#: functions/events.php:264
-msgid "delete map"
-msgstr "Karte nicht anzeigen"
-
-#: functions/events.php:543
+#: functions/events.php:573
 msgid "Event date"
 msgstr "Datum der Veranstaltung"
 
-#: functions/events.php:544
+#: functions/events.php:574
 msgid "Event location"
 msgstr "Ort"
 
@@ -345,36 +344,52 @@ msgstr "Wähle SHIFT + ENTER, um  Zwischenzeile zu verhindern"
 #: functions/options/class-sunflowersettingspage.php:59
 #: functions/options/class-sunflowersocialmediasettingspage.php:50
 msgid "Sunflower Settings"
-msgstr "Sunflower Einstellungen"
+msgstr "Sunflower-Einstellungen"
 
 #: functions/options/class-sunflowereventsettingspage.php:70
 msgid "Import calendars now"
 msgstr "Kalender jetzt importieren"
 
-#: functions/options/class-sunflowereventsettingspage.php:143
+#: functions/options/class-sunflowereventsettingspage.php:89
+msgid "Adjust geo marker for:"
+msgstr "Marker-Position für diesen Ort anpassen:"
+
+#: functions/options/class-sunflowereventsettingspage.php:90
+msgid "please choose"
+msgstr "bitte wählen"
+
+#: functions/options/class-sunflowereventsettingspage.php:106
+msgid "Delete geo data for this location"
+msgstr "Geo-Daten für diesen Ort löschen"
+
+#: functions/options/class-sunflowereventsettingspage.php:124
+msgid "load map"
+msgstr "Kartendaten laden"
+
+#: functions/options/class-sunflowereventsettingspage.php:153
 msgid "Description shown on the events page"
 msgstr "Beschreibung für die Termineseite"
 
-#: functions/options/class-sunflowereventsettingspage.php:151
+#: functions/options/class-sunflowereventsettingspage.php:161
 msgid "URLs of iCal calendars, one per row"
 msgstr "URLs der iCal-Kalender, pro Zeile eine URL"
 
-#: functions/options/class-sunflowereventsettingspage.php:159
-#: functions/options/class-sunflowereventsettingspage.php:163
+#: functions/options/class-sunflowereventsettingspage.php:169
+#: functions/options/class-sunflowereventsettingspage.php:173
 msgid "Rectify time zone"
 msgstr "Zeitzone korrigieren"
 
-#: functions/options/class-sunflowereventsettingspage.php:168
-#: functions/options/class-sunflowereventsettingspage.php:172
+#: functions/options/class-sunflowereventsettingspage.php:178
+#: functions/options/class-sunflowereventsettingspage.php:182
 msgid "Show overall map"
 msgstr "Übersichtskarte zeigen"
 
-#: functions/options/class-sunflowereventsettingspage.php:177
-#: functions/options/class-sunflowereventsettingspage.php:181
+#: functions/options/class-sunflowereventsettingspage.php:187
+#: functions/options/class-sunflowereventsettingspage.php:191
 msgid "Show events archive"
 msgstr "Vergangene Veranstaltungen anzeigen"
 
-#: functions/options/class-sunflowereventsettingspage.php:186
+#: functions/options/class-sunflowereventsettingspage.php:196
 msgid "Zoom-level of overall map"
 msgstr "Zoomlevel für Übersichtskarte"
 
@@ -399,7 +414,7 @@ msgstr "Theme aktivieren"
 
 #: functions/options/class-sunflowerfirststepspage.php:109
 msgid "Sunflower Terms of Use"
-msgstr "Sunflower Nutzungsbedingungen"
+msgstr "Sunflower-Nutzungsbedingungen"
 
 #: functions/options/class-sunflowerfirststepspage.php:113
 msgid "Accept Terms of Use"
@@ -429,7 +444,7 @@ msgstr "Zeige den/die Autor*in im Beitrag und über die REST-API."
 #: functions/options/class-sunflowersettingspage.php:147
 #: functions/options/class-sunflowersettingspage.php:153
 msgid "hide previous and next links"
-msgstr "Verstecke vor- und zurück-Links"
+msgstr "Verstecke Vor- und Zurück-Links"
 
 #: functions/options/class-sunflowersettingspage.php:159
 #: functions/options/class-sunflowersettingspage.php:163
@@ -452,11 +467,11 @@ msgstr "Layout für den Header"
 #: functions/options/class-sunflowersettingspage.php:189
 #: functions/options/class-sunflowersettingspage.php:193
 msgid "Show social media icons in header"
-msgstr "Social-Media Icons im Header anzeigen"
+msgstr "Social-Media-Icons im Header anzeigen"
 
 #: functions/options/class-sunflowersettingspage.php:198
 msgid "Show list of categories on category archive"
-msgstr "Zeige Liste von Kategorien auf Kategorie Seite"
+msgstr "Zeige Liste von Kategorien auf Kategorie-Seite"
 
 #: functions/options/class-sunflowersettingspage.php:206
 msgid "Enhance SEO"
@@ -472,7 +487,7 @@ msgstr ""
 
 #: functions/options/class-sunflowersettingspage.php:294
 msgid "Personal"
-msgstr ""
+msgstr "Persönlich"
 
 #: functions/options/class-sunflowersettingspage.php:316
 msgid "do not show"
@@ -520,27 +535,32 @@ msgid "WhatsApp"
 msgstr ""
 
 #: functions/options/class-sunflowersocialmediasettingspage.php:132
+#: functions/options/class-sunflowersocialmediasettingspage.php:136
+msgid "Mastodon"
+msgstr ""
+
+#: functions/options/class-sunflowersocialmediasettingspage.php:141
 msgid "mail"
 msgstr "E-Mail"
 
-#: functions/options/class-sunflowersocialmediasettingspage.php:136
+#: functions/options/class-sunflowersocialmediasettingspage.php:145
 msgid "Mail"
 msgstr "E-Mail"
 
-#: functions/options/class-sunflowersocialmediasettingspage.php:173
+#: functions/options/class-sunflowersocialmediasettingspage.php:182
 msgid "Show share buttons on single post page"
 msgstr "Zeige folgende Teilen-Buttons unter einem Einzel-Beitrag"
 
-#: functions/options/class-sunflowersocialmediasettingspage.php:246
-#: functions/s.php:154
+#: functions/options/class-sunflowersocialmediasettingspage.php:255
+#: functions/s.php:158
 msgid "Select Open Graph Fallback Image"
 msgstr "Fallback-Bild für Open-Graph-Tag wählen"
 
-#: functions/options/class-sunflowersocialmediasettingspage.php:258
+#: functions/options/class-sunflowersocialmediasettingspage.php:267
 msgid "Open Media Library"
 msgstr "Mediathek öffnen"
 
-#: functions/options/class-sunflowersocialmediasettingspage.php:263
+#: functions/options/class-sunflowersocialmediasettingspage.php:272
 msgid ""
 "This fallback image will be used when sharing pages and posts and no "
 "featured image has been selected."
@@ -548,43 +568,47 @@ msgstr ""
 "Dieses Fallback-Bild wird beim Teilen von Seiten oder Beiträgen verwendet, "
 "wenn kein Beitragsbild ausgewählt wurde."
 
-#: functions/s.php:54
+#: functions/s.php:59
 msgid "Mainmenu"
 msgstr "Hauptmenü"
 
-#: functions/s.php:55
+#: functions/s.php:60
 msgid "Topmenu"
 msgstr "Menü am oberen Rand"
 
-#: functions/s.php:56
+#: functions/s.php:61
 msgid "Footer Menu 1"
 msgstr "Fußzeilenmenü 1"
 
-#: functions/s.php:57
+#: functions/s.php:62
 msgid "Footer Menu 2"
 msgstr "Fußzeilenmenü 2"
 
-#: functions/s.php:103
+#: functions/s.php:115
 msgid "Sidebar"
 msgstr "Seitenleiste"
 
-#: functions/s.php:105
+#: functions/s.php:117
 msgid "Add widgets here."
 msgstr "Widgets hier hinzufügen."
 
-#: functions/s.php:167 template-parts/content-archive.php:67
+#: functions/s.php:171 template-parts/content-archive.php:67
 msgid "Continue reading"
 msgstr "weiterlesen"
 
 #: functions/security.php:13
 msgid "Login error. Did you mistype s.th.?"
-msgstr "Loginfehler. Haben Sie sich vertippt?"
+msgstr "Loginfehler. Hast du dich vertippt?"
 
 #: header.php:36
 msgid "Skip to content"
 msgstr "Weiter zum Inhalt"
 
-#: inc/class-wp-bootstrap-navwalker.php:403
+#: inc/class-wp-bootstrap-navwalker.php:314
+msgid "Show sub menu"
+msgstr "Zeige Untermenü"
+
+#: inc/class-wp-bootstrap-navwalker.php:405
 msgid "Add a menu"
 msgstr "Menü erstellen"
 
@@ -607,11 +631,15 @@ msgstr "Auf X (Twitter) teilen"
 msgid "Share on Facebook "
 msgstr "Auf Facebook teilen "
 
-#: inc/template-tags.php:127
+#: inc/template-tags.php:128
 msgid "Share on WhatsApp "
 msgstr "Auf WhatsApp teilen "
 
-#: inc/template-tags.php:136
+#: inc/template-tags.php:144
+msgid "Share on Mastodon "
+msgstr "Auf Mastodon teilen "
+
+#: inc/template-tags.php:154
 msgid "send mail "
 msgstr "Sende E-Mail"
 
@@ -620,28 +648,28 @@ msgstr "Sende E-Mail"
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für „%s“"
 
-#: single-sunflower_event.php:55 template-parts/archive-event.php:34
+#: single-sunflower_event.php:61 template-parts/archive-event.php:34
 msgid "o'clock"
 msgstr "Uhr"
 
-#: single-sunflower_event.php:83
+#: single-sunflower_event.php:89
 msgid "Location Link"
 msgstr "Ort"
 
-#: single-sunflower_event.php:99
+#: single-sunflower_event.php:105
 msgid "Link to webinar"
 msgstr "Link zur Online-Teilnahme (Webinar)"
 
-#: single-sunflower_event.php:105 single-sunflower_event.php:107
+#: single-sunflower_event.php:111 single-sunflower_event.php:113
 msgid "organized by"
 msgstr "organisiert von"
 
-#: single-sunflower_event.php:114
+#: single-sunflower_event.php:120
 msgid "Download as ics"
 msgstr "Download als ics-Datei"
 
 #: template-parts/content-archive.php:53 template-parts/content-page.php:36
-#: template-parts/content.php:89
+#: template-parts/content.php:113
 msgid "Pages:"
 msgstr "Seiten:"
 
@@ -673,11 +701,31 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
+"Anscheinend können wir nicht finden, wonach du suchst. Vielleicht hilft eine "
+"Internetsuche."
+
+#: template-parts/content.php:72
+msgid "Mastodon Instance address"
+msgstr "Adresse der Mastodon Instanz"
+
+#: template-parts/content.php:77
+msgid "Enter your instance's address"
+msgstr "Gib deine Instanz-Adresse ein"
+
+#: template-parts/content.php:82
+msgid "Memorize my instance"
+msgstr "Merke meine Instanz"
+
+#: template-parts/content.php:86
+msgid "Close"
+msgstr "Schließen"
+
+#: template-parts/content.php:87
+msgid "Save and Share"
+msgstr "Speichern und Teilen"
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:76
+#: template-parts/content.php:100
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Weiterlesen<span class=\"screen-reader-text\"> \"%s\"</span>"
 
@@ -763,6 +811,12 @@ msgctxt "Font family name"
 msgid "GrueneType"
 msgstr ""
 
+#~ msgid "Show and adjust map marker"
+#~ msgstr "Zeige Karte und korrigiere Marker-Positon"
+
+#~ msgid "delete map"
+#~ msgstr "Karte nicht anzeigen"
+
 #~ msgid "Import Images to Media"
 #~ msgstr "Bilder in Mediathek importieren"
 
@@ -784,9 +838,6 @@ msgstr ""
 
 #~ msgid "Next events"
 #~ msgstr "Nächste Termine"
-
-#~ msgid "show next events"
-#~ msgstr "zeige nächste Termine"
 
 #~ msgid "Loading"
 #~ msgstr "lade"

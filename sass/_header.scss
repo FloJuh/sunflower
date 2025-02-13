@@ -64,7 +64,7 @@ body.admin-bar {
         width: 100%;
 
         top: 0;
-        z-index: 5000;
+        z-index: 50;
 
         .navbar-brand {
             opacity: 1;
@@ -183,12 +183,26 @@ body {
     padding: 27px 0;
 
     .img-container {
-        margin-right: 0.75rem;
-    }
+        margin-right: 0.5rem;
 
-    img {
-        width: 55px;
-        background: transparent;
+        &.sunflower-logo {
+
+            img {
+                width: 55px;
+                background: transparent;
+            }
+        }
+
+        &.custom-logo {
+
+            img {
+                max-width: 100px;
+                max-height: 55px;
+                object-fit: contain;
+                object-position: right;
+            }
+        }
+
     }
 
     &-name {
@@ -225,7 +239,14 @@ body {
         }
 
         .img-container {
-            margin-right: 0.25rem;
+            margin-right: 1rem;
+
+            &.custom-logo {
+
+                img {
+                    max-width: 150px;
+                }
+            }
         }
     }
 }
@@ -264,11 +285,10 @@ body {
 
             &.sunflower-logo {
                 background-color: $secondary;
+                width: 95px;
             }
 
-            margin-right: 0.25rem;
             height: 95px;
-            width: 95px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -279,16 +299,16 @@ body {
         }
 
         img {
-            width: 75px;
+            height: 100%;
         }
 
         #mainmenu {
 
             > .menu-item {
                 display: flex;
-                align-items: center;
                 height: auto;
                 margin-right: 5px;
+                align-items: center;
 
                 @include media-breakpoint-up(md) {
                     height: 5em;

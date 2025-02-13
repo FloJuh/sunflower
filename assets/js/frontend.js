@@ -33,7 +33,7 @@ jQuery( function () {
 
 	jQuery( '.show-search' ).on( 'click', function () {
 		jQuery( '.topmenu .search input' ).toggleClass( 'active' );
-		jQuery( '.topmenu .search input' ).focus();
+		jQuery( '.topmenu .search input' ).trigger( 'focus' );
 	} );
 
 	jQuery( '.show-contrast' ).on( 'click', function () {
@@ -208,4 +208,17 @@ jQuery( '.dropdown .dropdown-toggle' ).on( 'click', function () {
 
 	return false;
 } );
+
+jQuery( function () {
+	jQuery( '.navbar-toggler' ).click( function () {
+		if ( jQuery( '.navbar-toggler' ).hasClass( 'collapsed' ) ) {
+			window.setTimeout( () => {
+				jQuery( 'body' ).removeClass( 'navbar-open' );
+			}, 100 );
+		} else {
+			jQuery( 'body' ).addClass( 'navbar-open' );
+		}
+	} );
+} );
+
 /* eslint-enable no-undef */

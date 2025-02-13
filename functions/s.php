@@ -28,7 +28,12 @@ if ( ! function_exists( 'sunflower_setup' ) ) :
 		* If you're building a theme based on sunflower, use a find and replace
 		* to change 'sunflower' to the name of your theme in all the template files.
 		*/
-		load_theme_textdomain( 'sunflower', get_template_directory() . '/languages' );
+		// Hack for WordPress 6.7.0.
+		if ( version_compare( $GLOBALS['wp_version'], '6.7', '<' ) ) {
+			load_theme_textdomain( 'sunflower', get_template_directory() . '/languages' );
+		} else {
+			load_textdomain( 'sunflower', get_template_directory() . '/languages/' . determine_locale() . '.mo' );
+		}
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -71,6 +76,13 @@ if ( ! function_exists( 'sunflower_setup' ) ) :
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
 		add_theme_support( 'align-wide' );
+
+		/**
+		 * Add Responsive embedded content
+		 * https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/#responsive-embedded-content
+		 */
+		add_theme_support( 'responsive-embeds' );
+
 		add_theme_support( 'editor-styles' );
 		add_editor_style( '/assets/css/editor-style.css' );
 		add_editor_style( '/assets/css/admin-fontawesome.css' );
@@ -87,7 +99,7 @@ add_action( 'after_setup_theme', 'sunflower_setup' );
  * @global int $content_width
  */
 function sunflower_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'sunflower_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'sunflower_content_width', 876 );
 }
 
 add_action( 'after_setup_theme', 'sunflower_content_width', 0 );
@@ -125,16 +137,8 @@ function sunflower_scripts() {
 	}
 
 	wp_enqueue_script(
-		'popper',
-		get_template_directory_uri() . '/assets/vndr/@popperjs/core/dist/umd/popper.min.js',
-		array(),
-		SUNFLOWER_VERSION,
-		true
-	);
-
-	wp_enqueue_script(
 		'bootstrap',
-		get_template_directory_uri() . '/assets/vndr/bootstrap/dist/js/bootstrap.min.js',
+		get_template_directory_uri() . '/assets/vndr/bootstrap/dist/js/bootstrap.bundle.min.js',
 		array( 'jquery' ),
 		SUNFLOWER_VERSION,
 		true
@@ -189,6 +193,15 @@ function sunflower_scripts() {
 	wp_enqueue_style( 'lightbox', get_template_directory_uri() . '/assets/vndr/lightbox2/dist/css/lightbox.min.css', array(), '4.3.0' );
 	wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/assets/vndr/lightbox2/dist/js/lightbox.min.js', array( 'jquery' ), '3.3.0', true );
 	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/assets/vndr/masonry-layout/dist/masonry.pkgd.min.js', array( 'masorny' ), '4.2.2', true );
+	if ( sunflower_get_setting( 'sunflower_sharer_mastodon' ) ) {
+		wp_enqueue_script(
+			'mastodon',
+			get_template_directory_uri() . '/assets/js/mastodon.js',
+			null,
+			SUNFLOWER_VERSION,
+			true
+		);
+	}
 }
 
 add_action( 'wp_enqueue_scripts', 'sunflower_scripts' );
